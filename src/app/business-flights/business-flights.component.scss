@@ -1,0 +1,125 @@
+header {
+  padding: 0 150px;
+  position: relative;
+  background: url("../../assets/helicopter-bg-3-min.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 2;
+}
+
+.inner {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  padding: 80px 50px 50px 50px;
+}
+
+.inner h1 {
+  max-width: 650px;
+  font-size: 54px;
+}
+
+.bis-block {
+  padding: 30px 45px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+
+.bis-block:hover {
+  transform: translateY(-5px);
+}
+
+.bis-text {
+
+}
+
+.bis-text .bis-text-title {
+  font-size: 28px;
+  font-family: 'Rubik',sans-serif;
+}
+
+.bis-text .bis-text-span {
+  font-size: 16px;
+  max-width: 280px;
+}
+
+//---------------- MEDIA QUETIONS ------------------
+
+@media (max-width: 1440px) {
+  .helicopter_wrapper {
+    left: 10.5%;
+  }
+
+  .bis-block {
+    padding: 29px 23px;
+  }
+
+  .bis-text-title p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .email-footer {
+    display: none !important;
+  }
+
+  .helicopter_wrapper {
+    left: 12%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .email-footer {
+    display: none !important;
+  }
+
+  .helicopter_wrapper {
+    left: 12%;
+  }
+}
+
+@media (max-width: 990px) {
+  header {
+    padding: 0 50px;
+  }
+
+  .inner h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-line {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .inner {
+    padding: 80px 0px 50px 0px;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+
+}
+
+@media (max-width: 375px) {
+
+}

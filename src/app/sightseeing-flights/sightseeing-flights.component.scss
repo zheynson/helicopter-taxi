@@ -1,0 +1,210 @@
+.container-my {
+  padding: 100px 200px;
+  background-color: #eff2f2;
+}
+
+.row {
+  transition: 0.3s;
+}
+
+.row:hover {
+  transform: translateY(-3px);
+}
+
+.img-obzor, .obzor-block {
+  height: 375px !important;
+}
+
+.img-obzor {
+  background: url("../../assets/sightseeing-flightts/obzornie-bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.img-obzor-1 {
+  background: url("../../assets/sightseeing-flightts/moscow-bg.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.img-obzor-2 {
+  background: url("../../assets/ruslan-kondratenko-troitse-izmailovskii-sobor-troitskii-sobo.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.obzor-block {
+  padding: 40px 45px;
+  background-color: white;
+}
+
+.title-obzor-text {
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.hr {
+  opacity: 0.1;
+  background-color: #f3f5f5;
+}
+
+.long-fly {
+  font-size: 14px;
+}
+
+.send-form-btn {
+  padding: 5px 70px;
+  color: white;
+  transition: 0.3s all;
+  font-size: 18px;
+  background-color: #45B3E4;
+  border: 0 solid #45B3E4;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.send-form-btn:hover {
+
+  transform: translateY(-3px);
+}
+
+.cost-and-btn span {
+  font-size: 25px;
+}
+
+//---------- MEDIA QUETIONS ------------
+
+@media (max-width: 1440px) {
+  .container-my {
+    padding: 100px 100px;
+  }
+
+}
+
+@media (max-width: 1271px) {
+  .obzor-block {
+    padding: 6px 45px;
+  }
+
+  .cost-and-btn {
+    flex-direction: column;
+  }
+
+  .mb-5 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mb-2 mb-2 {
+    margin-bottom: 0;
+  }
+
+  .help-2 {
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 963px) {
+  .title-obzor-text {
+    font-size: 22px;
+  }
+
+  .obzor-block:last-child {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 891px) {
+  .help-2 {
+    font-size: 18px;
+  }
+
+  .send-form-btn {
+    padding: 5px 41px;
+    font-size: 15px;
+  }
+
+  .long-fly {
+    margin-right: 17px;
+  }
+
+  .container-my {
+    padding: 100px 69px
+  }
+
+}
+
+@media (max-width: 768px) {
+  .obzor-block {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 727px) {
+  .obzor-block {
+    padding: 15px 5px !important;
+  }
+}
+
+
+
+@media (min-width: 673px) {
+  .col-lg-6 {
+    flex: 0 0 auto !important;
+    width: 50% !important;
+  }
+
+
+}
+
+@media (max-width: 673px) {
+
+  .img-obzor, .img-obzor-1, .img-obzor-2 {
+    height: 250px !important;
+  }
+
+  .obzor-block {
+    margin-bottom: 30px;
+    height: 300px !important;
+    padding: 20px 31px !important;
+  }
+
+  .cost-and-btn {
+    flex-direction: inherit;
+  }
+
+  .long-fly {
+    margin-bottom: 8px;
+  }
+
+  .cost-and-btn span {
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width: 510px) {
+ .obzor-block {
+   padding: 11px 11px !important;
+   height: 268px;
+ }
+}
+
+@media (max-width: 470px) {
+  .container-my {
+    padding: 100px 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-my {
+    padding: 89px 34px;
+  }
+
+}
+
+

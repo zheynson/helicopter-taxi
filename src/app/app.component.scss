@@ -1,0 +1,880 @@
+@keyframes spin {
+  from {
+    transform:rotateY(0deg);
+  }
+
+  to {
+    transform:rotateY(-360deg);
+  }
+}
+
+@keyframes tailblade {
+  from {
+    transform:rotate3d(0,0,1,0deg);
+  }
+
+  to {
+    transform:rotate3d(0,0,1,-360deg);
+  }
+}
+@keyframes float {
+  from {
+    transform:translateY(8px) rotate3d(0,0,1,3deg);
+  }
+
+  to {
+    transform:translateY(-8px) rotate3d(0,0,1,0deg);
+  }
+}
+
+.helicopter_wrapper{
+  position:absolute;
+  top:15%;
+  left:20%;
+}
+
+.helicopter {
+  position:relative;
+  animation-duration: 1s;
+  animation-name: float;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+.helicopter_body {
+
+}
+
+.blade {
+  position:absolute;
+  top:0;
+  left:31px;
+  animation-duration: 0.2s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  animation-play-state: running;
+}
+
+.tailblade{
+  width:3px;
+  height:7px;
+  background-color: #5a5b5c;
+  position:absolute;
+  top:9px;
+  left:10px;
+  transform-origin:50% 100%;
+  animation-duration: .1s;
+  animation-name: tailblade;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  animation-play-state: running;
+}
+.plug {
+  height: 70px;
+}
+
+.header {
+  font-family: 'Rubik', sans-serif;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 6%);
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.logo a {
+  transition: 0.3s all;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-link {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.nav-link li {
+  font: 400 14px / 1.666 'rubik', sans-serif;
+  margin-right: 50px;
+  color: #353535;
+  transition: 0.5s;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-link li:last-child {
+  margin-right: 0;
+}
+
+.btn-order {
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  //padding: 12px 30px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btn-order:hover {
+  background-color: black;
+  color: white;
+}
+
+//FOOTER STYLE
+
+.forms {
+  position: relative;
+  background: url("../assets/gelicopter-bg-2.jpeg") center no-repeat;
+  background-size: cover;
+  color: white;
+  -webkit-background-size: cover;
+}
+
+.forms:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(57, 59, 61, .95);
+  z-index: 2;
+}
+
+.container-fluid {
+  padding: 66px 45px;
+  position: relative;
+  z-index: 3;
+}
+
+.title-form {
+  font-size: 42px;
+  font-weight: normal;
+  margin-bottom: 0 !important;
+  padding: 0;
+  font-family:'rubik', sans-serif;
+}
+
+.cost-estimation {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.28571rem;
+  padding: 0;
+}
+
+.cost-estimation:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #45B3E4;
+  width: 166px;
+  height: 3px;
+}
+
+input {
+  background-color: #5A5B5C;
+  color: white;
+  border-color: #5A5B5C;
+  border-radius: 4px;
+  padding: 15px 25px;
+}
+
+.form-input + .form-input {
+  margin-left: 10px;
+}
+
+.form-input:first-child {
+  margin-left: 0;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+input {
+  &.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  &.ng-valid {
+    border: 1px solid #5A5B5C ;
+  }
+}
+
+.two-inputs {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 35px;
+}
+
+.check-pay {
+  font-size: 16px;
+}
+
+.card-check {
+  margin-right: 15px;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 1px solid #9299A2;
+}
+
+.card-check {
+  cursor: pointer;
+}
+
+#card-check, #whats-app, #telegram, #email-2, #number-2, #bitcoin-check {
+  background-color: #1d9fd9;
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+}
+
+#last-check {
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+}
+
+.send-form-btn {
+  padding: 17px 120px;
+  color: white;
+  transition: 0.3s all;
+  font-size: 18px;
+  background-color: #45B3E4;
+  border: 0 solid #45B3E4;
+  border-radius: 3px;
+}
+
+.send-form-btn:hover {
+  transform: translateY(-6px);
+}
+
+.btn-order:hover {
+  transform: translateY(-3px);
+}
+
+.partners-line {
+  height: 123px;
+  background-color: #444444;
+}
+
+.title-partner {
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+}
+
+.title-partner p {
+  margin-bottom: 0 !important;
+  margin-left: 45px;
+}
+
+.smalll-help {
+  margin-right: 10px !important;
+  right: 42px !important;
+  top: 25% !important;
+  opacity: 0.5 !important;
+}
+
+.send-form-btn:disabled {
+  transform: translateY(0);
+  opacity: 0.5;
+}
+
+.img-partners {
+  width: 150px !important;
+  filter: grayscale(100%) invert(1);
+}
+
+.inp-data::placeholder {
+  content: 'Дата вылета' !important;
+}
+
+
+@media (max-width: 1440px) {
+  .helicopter_wrapper {
+    left: 10.5%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .header {
+    .helicopter_wrapper {
+      left: 15.5%;
+    }
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .header {
+    .helicopter_wrapper {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+ .email-footer {
+   display: none !important;
+ }
+
+  .helicopter_wrapper {
+    left: 12%;
+  }
+}
+
+@media (min-width: 991px) {
+  .header-b {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .partners-line {
+    display: none !important;
+  }
+
+  .one-inputs, .two-inputs, .three-inputs {
+    flex-direction: column;
+  }
+
+  .form-input {
+    margin-left: 0 !important;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .check-box {
+    flex-direction: column;
+  }
+
+  .box-1 {
+    margin-bottom: 20px;
+  }
+
+  .email-footer {
+    display: flex !important;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+  .email-footer {
+    display: none !important;
+  }
+
+  .send-form-btn {
+    padding: 17px 50px;
+  }
+}
+
+@media (max-width: 598px) {
+  .c-b {
+    flex-direction: column;
+  }
+
+  .card-check {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 487px) {
+  .send-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .last-check {
+    margin-bottom: 20px;
+  }
+
+  .card-check {
+    font-size: 12px;
+  }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////HEADER-B BURGER
+
+.header-b {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-b ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header-b li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header-b li a:hover,
+.header-b .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header-b .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 2px 20px;
+
+}
+
+/* menu */
+
+.header-b .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header-b .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header-b .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header-b .menu-icon .navicon:before,
+.header-b .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header-b .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header-b .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header-b .menu-btn {
+  display: none;
+}
+
+.header-b .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header-b .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header-b .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header-b .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header-b .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header-b .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 992px) {
+  .header-b li {
+    float: left;
+  }
+  .header-b li a {
+    padding: 20px 30px;
+  }
+  .header-b .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header-b .menu-icon {
+    display: none;
+  }
+}
+@media (max-width: 451px) {
+  #last-check {
+    width: 26px;
+    height: 26px;
+  }
+
+  .last-check div {
+    padding-left: 19px;
+  }
+
+}
+
+@media (max-width: 376px) {
+  .last-check div {
+    padding-left: 33px;
+
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////HEADER-B BURGER
+
+.form-input {
+  position: relative;
+}
+
+.smalll {
+  position: absolute;
+  right: 30px;
+  top: 35%;
+}
+
+
+
+
+//
+/////////////////////////////////////////////////////////////////HELICOPTERS
+
+.container-wrapper {
+  background-color: #f3f5f5;
+}
+
+.container-my {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0 100px 0;
+}
+
+.title-choose-heli h1{
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
+  font-size: 68px;
+  position: relative;
+}
+
+.title-choose-heli h1:after, .choose-footer h1:after {
+  content: ' ';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: #45B3E4;
+  width: 166px;
+  height: 2px;
+}
+
+.helicopterr {
+  text-align: center;
+  position: relative;
+  background-size: cover !important;
+  height: 300px;
+  border-radius: 5px;
+  -webkit-background-size: cover;
+}
+
+.heli-wrapper {
+  position: relative;
+  transition: 0.3s all;
+}
+
+.hover-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  z-index: 9;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.modal-body {
+  text-align: center !important;
+}
+
+.hover-price p {
+  width: 100%;
+}
+
+.hover-price:hover {
+  opacity: 0.95;
+}
+
+.h-1 {
+  background: url("../assets/gelicopters/AGUSTAWESTLAND AW109 GRAND.jpeg") center no-repeat;
+}
+.h-2 {
+  background: url("../assets/gelicopters/AGUSTAWESTLAND AW139.jpg") no-repeat center;
+}
+.h-3 {
+  background: url("../assets/gelicopters/BELL 407.jpg") no-repeat center;
+}
+.h-4 {
+  background: url("../assets/gelicopters/BELL 429.jpg") no-repeat center;
+}
+.h-5 {
+  background: url("../assets/gelicopters/EUROCOPTER AS350.jpg") no-repeat center;
+}
+.h-6 {
+  background: url("../assets/gelicopters/EUROCOPTER AS355.jpg") no-repeat center;
+}
+.h-7 {
+  background: url("../assets/gelicopters/EUROCOPTER EC130.jpg") no-repeat center;
+}
+.h-8 {
+  background: url("../assets/gelicopters/EUROCOPTER EC135.jpeg") no-repeat center;
+}
+.h-9 {
+  background: url("../assets/gelicopters/ROBINSON R44.jpeg") no-repeat center;
+}
+.h-10 {
+  background: url("../assets/gelicopters/КА-32.jpg") no-repeat center;
+}
+.h-11 {
+  background: url("../assets/gelicopters/МИ-8.jpeg") no-repeat center;
+}
+
+.helicopterr p {
+  padding: 5px 0 5px 0;
+  background-color: #353535;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.h-1-block:hover, .h-2-block:hover, .h-3-block:hover, .h-4-block:hover, .h-5-block:hover, .h-6-block:hover, .h-7-block:hover, .h-8-block:hover, .h-9-block:hover, .h-10-block:hover, .h-11-block:hover, .h-12-block:hover {
+  transform: translateY(-4px);
+}
+
+.choose-footer {
+  padding: 10px;
+}
+
+.choose-footer h1 {
+  position: relative;
+}
+
+.footer-choose-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 740px;
+}
+
+.container-wrapper, .main-container {
+  overflow-x: hidden !important;
+}
+
+//---------- MEDIA QUETIONS ------------
+
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1024px) {
+  .title-choose-heli h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-choose-heli h1 {
+    font-size: 40px;
+    padding-left: 10px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .title-choose-heli h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//STROKE
+
+#mainNav.stroke ul li a {
+  position: relative;
+}
+
+.stroke ul li a:after,
+#mainNav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: black;
+  height: 1px;
+}
+
+#mainNav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+#mainNav ul li a {
+  transition: all 1s;
+}
+
+#mainNav ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+#mainNav ul li a:hover {
+  color: #E34F25;
+  z-index: 1;
+}
+
+#mainNav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  opacity: 1;
+}
+
+#mainNav ul {
+  list-style: none;
+  margin: 0;
+
+}
+
+#mainNav ul li {
+  display: inline-block;
+  display: inline;
+  margin: 20px;
+}
+
+#mainNav ul li a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#mainNav ul li a,
+#mainNav ul li a:after,
+#mainNav ul li a:before {
+  transition: all .5s;
+}
+
+#mainNav ul li a:hover {
+  color: #E34F25;
+}
+
+

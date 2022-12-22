@@ -1,0 +1,422 @@
+<div class="header">
+  <div class="container">
+
+    <div class="header-nav">
+
+      <div class="logo">
+
+        <div class="helicopter_wrapper">
+          <div class="helicopter">
+            <img class="helicopter_body"
+                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/bladeless_helicopter.png"
+                 alt="Helicopter with no blades">
+            <img class="blade" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/rotary_blade.png"
+                 alt="Helicopter Blades">
+            <div class="tailblade"></div>
+          </div>
+        </div>
+
+        <a href="/"><img src="assets/logo.png" alt=""></a>
+      </div>
+
+      <div class="nav stroke" id="mainNav">
+        <ul class="nav-link">
+          <li><a href="/helicopter">ВЕРТОЛЕТЫ</a></li>
+          <li><a href="/business">ДЕЛОВЫЕ ПОЛЕТЫ</a></li>
+          <li><a href="/sightseeing">ОБЗОРНЫЕ ПОЛЕТЫ</a></li>
+        </ul>
+      </div>
+
+      <div class="order d-flex">
+        <button (click)="scroll(target)" class="btn btn-default btn-order">ЗАЯВКА НА ПОЛЕТ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="header-b">
+  <a href="" class="logo"><img src="assets/logo.png" alt=""></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn"/>
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="/helicopter">ВЕРТОЛЕТЫ</a></li>
+    <li><a href="/business">ДЕЛОВЫЕ ПОЛЕТЫ</a></li>
+    <li><a href="/sightseeing">ОБЗОРНЫЕ ПОЛЕТЫ</a></li>
+    <li><a href="/helicopter">ЗАЯВКА НА ПОЛЕТ</a></li>
+  </ul>
+</header>
+
+<router-outlet></router-outlet>
+
+<div class="container-wrapper">
+  <div class="container-my">
+    <div class="title-choose-heli mb-5">
+      <h1>Выбрать вертолет</h1>
+    </div>
+
+    <div class="row mb-5">
+
+      <div class="h-1-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[0])" class="helicopterr h-1">
+          <p class="heli-name">AGUSTAWESTLAND AW109 GRAND</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>130 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 7 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 270 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-2-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[1])" class="helicopterr h-2">
+          <p class="heli-name">AGUSTAWESTLAND AW139</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>280 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 8 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 310 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-3-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[2])" class="helicopterr h-3">
+          <p class="heli-name">BELL 407</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>86 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 6 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 256 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-4-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[3])" class="helicopterr h-4">
+          <p class="heli-name">BELL 429</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>120 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 5 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 278 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-5-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[4])" class="helicopterr h-5">
+          <p class="heli-name">EUROCOPTER AS350</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>65 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 5 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 287 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-6-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[5])" class="helicopterr h-6">
+          <p class="heli-name">EUROCOPTER AS355</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>90 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 5 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 287 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-7-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[6])" class="helicopterr h-7">
+          <p class="heli-name">EUROCOPTER EC130</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>85 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 6 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 280 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-8-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[7])" class="helicopterr h-8">
+          <p class="heli-name">EUROCOPTER EC135</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>120 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 6 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 260 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-9-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[8])" class="helicopterr h-9">
+          <p class="heli-name">ROBINSON R44</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>41 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 3 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 210 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-10-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[9])" class="helicopterr h-10">
+          <p class="heli-name">КА-32</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>210 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 13 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 267 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-11-block heli-wrapper p-1 col-lg-4 col-md-6">
+        <div (click)="scroll(target); chooseHeli(allHelicopter[10])" class="helicopterr h-11">
+          <p class="heli-name">МИ-8</p>
+          <div class="hover-price d-flex justify-content-center align-items-center w-100">
+            <p>315 000 руб/ч</p>
+            <p><img src="assets/users.png" alt=""> 28 пасс</p>
+            <p><img src="assets/tachometer.png" alt=""> 250 км/ч</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="choose-footer">
+      <h1 class="mb-5">Вертолетное такси</h1>
+      <p class="footer-choose-text">Вертолетное такси в России появилось не так давно, но положительно зарекомендовало
+        себя среди деловых персон.
+        Если Вам необходимо в течении одного дня посетить несколько заводов, фабрик, лесных и охотничьих хозяйств
+        — вертолетное такси наиболее оптимальное решение вопроса.
+      </p>
+
+      <p class="footer-choose-text">Все запросы проката и аренды вертолетов обрабатываются в течении одного часа.
+        Специалист предоставит несколько
+        вариантов в виде коммерческого предложения по электронной почте.
+      </p>
+
+      <p class="footer-choose-text">Вертолёты VIP класса: аренда вертолётов Eurocopter AS355, EC130, AW109 и Bell 429
+        востребована в Москве.
+        Данные вертолёты необходимо бронировать заранее. Подарите себе незабываемые впечатления от полета на
+        арендованном вертолете люкс класса.
+        Компания предоставляет очень качественный сервис по направлениям: деловые полеты, вертолетные чартеры,
+        трансферы.
+      </p>
+
+      <p class="footer-choose-text">Если Вас заинтересовала цена аренды вертолета — звоните или сделайте запрос на
+        странице расчет рейса.</p>
+
+    </div>
+
+    <div #target class="end"></div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Заявка успешно отправлена!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Ожидайте звонка специалиста</p>
+        <p>Он свяжется с вами в ближайшее время</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div #target class="footer">
+  <div class="forms">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="title-form">
+          <p>Форма заявки</p>
+        </div>
+        <div class="cost-estimation mb-5">
+          <p>Расчет стоимости</p>
+        </div>
+
+
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="one-inputs d-flex justify-content-center">
+
+            <div class="form-input mb-3 col-lg-4 ">
+              <input formControlName="dateGo" type="date" placeholder="Дата вылета" class="form-control inp-data"
+                     id="date"
+                     aria-describedby="emailHelp">
+              <div class="smalll smalll-help">Дата вылета -</div>
+            </div>
+
+
+            <div class="form-input mb-3 col-lg-4">
+              <input type="time" formControlName="timeGo" placeholder="Время вылета" class="form-control"
+                     id="time-start">
+              <div class="smalll smalll-help">Время вылета -</div>
+            </div>
+
+            <div class="form-input mb-3 col-lg-4">
+              <input [(ngModel)]="heliForInput" formControlName="heliModel" placeholder="Модель вертолета" type="text"
+                     class="form-control" id="name-heli">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll"
+                   src="assets/footer-icons/helicopter-small.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="two-inputs d-flex justify-content-center">
+            <div class="form-input mb-3 col-lg-4">
+              <input formControlName="placeStart" placeholder="Место вылета" type="email" class="form-control"
+                     id="place-start"
+                     aria-describedby="emailHelp">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll" src="assets/footer-icons/location.png"
+                   alt="">
+            </div>
+
+            <div class="form-input mb-3 col-lg-4">
+              <input formControlName="placeEnd" placeholder="Место прилета" type="text" class="form-control"
+                     id="place-end">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll" src="assets/footer-icons/marker.png"
+                   alt="">
+            </div>
+
+            <div class="form-input mb-3 col-lg-4">
+              <input type="number" formControlName="numberOfPassenger" placeholder="Количество пасажиров" type="text"
+                     class="form-control" id="count">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll" src="assets/footer-icons/pooples.png"
+                   alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="three-inputs d-flex justify-content-center">
+            <div class="form-input mb-3 col-lg-4">
+              <input type="text" formControlName="fullName" placeholder="ФИО" class="form-control" id="full-name"
+                     aria-describedby="emailHelp">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll" src="assets/footer-icons/user.png" alt="">
+            </div>
+
+            <div class="form-input mb-3 col-lg-4">
+              <input formControlName="telephone" placeholder="Номер телефона" class="form-control" id="number">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll" src="assets/footer-icons/phone.png"
+                   alt="">
+            </div>
+
+            <div class="form-input mb-3 col-lg-4">
+              <input formControlName="email" placeholder="Электронная почта" type="text" class="form-control"
+                     id="email">
+              <img data-aos="fade-up" data-aos-duration="1000" class="smalll" src="assets/footer-icons/envelope.png"
+                   alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="check-box d-flex">
+
+            <div class="box-1 col-lg-6">
+
+              <div class="check-pay">
+                <p>СПОСОБ ОПЛАТЫ</p>
+              </div>
+
+              <div class="card-and-bitcoin d-flex">
+
+                <label for="card-check" class="card-check d-flex justify-content-center align-items-center">
+                  <input formControlName="card" id="card-check" type="checkbox">
+                  <div>Картой на сайте</div>
+                </label>
+
+                <label for="bitcoin-check" class="card-check d-flex justify-content-center align-items-center">
+                  <input formControlName="bitcoin" id="bitcoin-check" type="checkbox">
+                  <div>Bitcoin</div>
+                </label>
+
+              </div>
+            </div>
+
+            <div class="box-2 col-lg-6 col-md-5">
+
+              <div class="check-pay">
+                <p>УДОБНЫЙ ФОРМАТ СВЯЗИ</p>
+              </div>
+
+              <div class="card-and-bitcoin c-b d-flex">
+
+                <label for="number-2" class="card-check d-flex justify-content-center align-items-center">
+                  <input id="number-2" type="checkbox">
+                  <div>Телефон</div>
+                </label>
+
+                <label for="email-2" class="email-footer card-check d-flex justify-content-center align-items-center">
+                  <input id="email-2" type="checkbox">
+                  <div>Email</div>
+                </label>
+
+                <label for="telegram" class="card-check d-flex justify-content-center align-items-center">
+                  <input id="telegram" type="checkbox">
+                  <div>Telegram</div>
+                </label>
+
+                <label for="whats-app" class="whats-app card-check d-flex justify-content-center align-items-center">
+                  <input id="whats-app" type="checkbox">
+                  <div>WhatsApp</div>
+                </label>
+
+              </div>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="send-form mt-5 d-flex justify-content-between align-items-center">
+            <label for="last-check" class=" last-check d-flex justify-content-start align-items-center">
+              <input formControlName="dataSave" id="last-check" type="checkbox">
+              <div>Согласен на обработку персональных данных</div>
+            </label>
+
+
+            <button [disabled]="form.invalid" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="send-form-btn" type="submit">Отправить
+            </button>
+
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="partners-line d-flex justify-content-between align-items-center">
+    <div class="title-partner">
+      <p>КЛИЕНТЫ И ПАРТНЕРЫ</p>
+    </div>
+    <div class="owl col-lg-8">
+      <owl-carousel-o class="" [options]="customOptions">
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/1.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/2.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/4.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/5.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/6.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/7.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/9.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/10.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/11.png" alt=""></ng-template>
+        <ng-template carouselSlide><img class="img-partners" src="assets/partners-img/12.png" alt=""></ng-template>
+      </owl-carousel-o>
+    </div>
+
+  </div>
+
+
+</div>
+
+
