@@ -24,28 +24,99 @@
           <li><a href="/helicopter">ВЕРТОЛЕТЫ</a></li>
           <li><a href="/business">ДЕЛОВЫЕ ПОЛЕТЫ</a></li>
           <li><a href="/sightseeing">ОБЗОРНЫЕ ПОЛЕТЫ</a></li>
+          <li><a href="/platforms">ПЛОЩАДКИ</a></li>
         </ul>
       </div>
 
       <div class="order d-flex">
         <button (click)="scroll(target)" class="btn btn-default btn-order">ЗАЯВКА НА ПОЛЕТ</button>
       </div>
+
+      <!--      МЕНЮ СПРАВА-->
+
+      <div class="menu" [style]="'cursor: pointer'" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+           aria-controls="offcanvasRight">Меню
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Поддержка клиентов</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="menu-all">
+            <div class="tet d-flex justify-content-between align-items-center">
+              <a href="tel:+79630860926">+7 (963) 086-09-26</a>
+              <div class="stick"></div>
+              <div class="telegram">
+                <a href="tg://resolve?domain=TaxiGeli"><img src="assets/telegram-app.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-all">
+            <p class="koko">Главный офис</p>
+            <div class="tet d-flex flex-column">
+              <a href="tel:+79630860926">+7 (963) 086-09-26</a>
+
+              <div class="p">пн. – пт.: 07:00 – 22:00</div>
+
+            </div>
+          </div>
+
+          <div class="menu-all .lalo">
+            <p class="koko">Адрес</p>
+            <div class="tet d-flex flex-column">
+
+              <div class="jojo">
+                <p> г. Москва, Пресненская набережная,</p>
+              </div>
+
+              <div class="jojo">
+                <p> д. 12, этаж 37
+                  Москва-Сити,</p>
+              </div>
+
+              <div class="jojo">
+                <p> Деловой комплекс «Федерация», Башня «Запад»</p>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
     </div>
   </div>
 </div>
-
 <header class="header-b">
   <a href="" class="logo"><img src="assets/logo.png" alt=""></a>
+
+  <div class="telephone">
+    <a href="tel:+79630860926">+7 (963) 086-09-26</a>
+  </div>
+
   <input class="menu-btn" type="checkbox" id="menu-btn"/>
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
   <ul class="menu">
     <li><a href="/helicopter">ВЕРТОЛЕТЫ</a></li>
     <li><a href="/business">ДЕЛОВЫЕ ПОЛЕТЫ</a></li>
     <li><a href="/sightseeing">ОБЗОРНЫЕ ПОЛЕТЫ</a></li>
+    <li><a href="/helicopter">ПЛОЩАДКИ</a></li>
+
+
     <li><a href="/helicopter">ЗАЯВКА НА ПОЛЕТ</a></li>
+
   </ul>
 </header>
-
 <router-outlet></router-outlet>
 
 <div class="container-wrapper">
@@ -416,6 +487,29 @@
 
   </div>
 
+
+  <div class="footer-end ">
+
+
+    <div class="footer-end-block d-flex justify-content-around align-items-center">
+      <div class="company">
+        <p>© 2010 — 2021 Управляющая вертолетная компания </p>
+      </div>
+
+      <div class="who-made d-flex align-items-center">
+        <p class="p-text">Разработка сайта - </p>
+        <a  href="https://alt-it.solutions/"><img class="who-mad-img" src="assets/who-made.jpg" alt=""></a>
+      </div>
+
+      <div class="pay-block">
+        <img src="assets/pay-img/payment-1.png" alt="">
+        <img src="assets/pay-img/payment-2.png" alt="">
+        <img src="assets/pay-img/payment-3.png" alt="">
+        <img class="world-pay" src="assets/pay-img/payment-4.png" alt="">
+      </div>
+    </div>
+
+  </div>
 
 </div>
 

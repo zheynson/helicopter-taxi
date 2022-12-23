@@ -1,5 +1,52 @@
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+.pump {
+  height: 70px;
+}
+
+header {
+  position: relative;
+  background: url('../../assets/map-of-russia.jpg') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.2);
+  z-index: 2;
+}
+
+.inner {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  transition: 0.1s all;
+}
+
+.inner:hover {
+  transform: translateY(-5px) !important;
+}
+
+.inner h1 {
+  font-size: 100px;
+  line-height: 4.2;
+}
+
+.inner span {
+  text-decoration: underline;
+}
+
+.accordion-flush {
+ opacity: 0.8;
+}
+
 
 //---------- MEDIA QUETIONS ------------
 
@@ -20,25 +67,5 @@
 
 @media (max-width: 375px) {
 
-}
-
-.img-wrapper {
-  padding: 5px;
-}
-
-.img-wrapper img {
- height: 200px;
-}
-
-.owl-theme .owl-nav [class*=owl-] .owl-prev {
-  background-color: #E34F25 !important;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  background: yellow !important;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-  background: blue !important;
 }
 

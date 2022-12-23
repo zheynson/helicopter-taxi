@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-sightseeing-flights',
@@ -10,6 +11,8 @@ export class SightseeingFlightsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+      AOS.init();
+      AOS.refresh()
   }
 
   scroll(el: HTMLElement) {

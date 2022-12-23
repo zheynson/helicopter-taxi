@@ -7,7 +7,6 @@
     transform:rotateY(-360deg);
   }
 }
-
 @keyframes tailblade {
   from {
     transform:rotate3d(0,0,1,0deg);
@@ -43,10 +42,6 @@
   animation-play-state: running;
 }
 
-.helicopter_body {
-
-}
-
 .blade {
   position:absolute;
   top:0;
@@ -75,7 +70,6 @@
 .plug {
   height: 70px;
 }
-
 .header {
   font-family: 'Rubik', sans-serif;
   box-shadow: 0 4px 8px rgb(0 0 0 / 6%);
@@ -310,118 +304,6 @@ hr {
   content: 'Дата вылета' !important;
 }
 
-
-@media (max-width: 1440px) {
-  .helicopter_wrapper {
-    left: 10.5%;
-  }
-}
-
-@media (max-width: 1399px) {
-  .header {
-    .helicopter_wrapper {
-      left: 15.5%;
-    }
-  }
-}
-
-
-@media (max-width: 1199px) {
-  .header {
-    .helicopter_wrapper {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
- .email-footer {
-   display: none !important;
- }
-
-  .helicopter_wrapper {
-    left: 12%;
-  }
-}
-
-@media (min-width: 991px) {
-  .header-b {
-    display: none;
-  }
-}
-@media (max-width: 991px) {
-  .partners-line {
-    display: none !important;
-  }
-
-  .one-inputs, .two-inputs, .three-inputs {
-    flex-direction: column;
-  }
-
-  .form-input {
-    margin-left: 0 !important;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .check-box {
-    flex-direction: column;
-  }
-
-  .box-1 {
-    margin-bottom: 20px;
-  }
-
-  .email-footer {
-    display: flex !important;
-  }
-
-
-
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 768px) {
-  .email-footer {
-    display: none !important;
-  }
-
-  .send-form-btn {
-    padding: 17px 50px;
-  }
-}
-
-@media (max-width: 598px) {
-  .c-b {
-    flex-direction: column;
-  }
-
-  .card-check {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 487px) {
-  .send-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .last-check {
-    margin-bottom: 20px;
-  }
-
-  .card-check {
-    font-size: 12px;
-  }
-}
-
-
 //////////////////////////////////////////////////////////////////////////////////HEADER-B BURGER
 
 .header-b {
@@ -442,7 +324,7 @@ hr {
 
 .header-b li a {
   display: block;
-  padding: 20px 20px;
+  padding: 12px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
@@ -450,6 +332,10 @@ hr {
 .header-b li a:hover,
 .header-b .menu-btn:hover {
   background-color: #f4f4f4;
+}
+
+.telephone {
+  text-decoration: underline;
 }
 
 .header-b .logo {
@@ -478,6 +364,17 @@ hr {
   padding: 28px 20px;
   position: relative;
   user-select: none;
+}
+
+.menu-icon {
+  position: relative;
+}
+
+.telephone{
+  position: absolute;
+  right: 100px;
+  top: 13px;
+  font-size: 20px;
 }
 
 .header-b .menu-icon .navicon {
@@ -535,43 +432,6 @@ hr {
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 992px) {
-  .header-b li {
-    float: left;
-  }
-  .header-b li a {
-    padding: 20px 30px;
-  }
-  .header-b .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header-b .menu-icon {
-    display: none;
-  }
-}
-@media (max-width: 451px) {
-  #last-check {
-    width: 26px;
-    height: 26px;
-  }
-
-  .last-check div {
-    padding-left: 19px;
-  }
-
-}
-
-@media (max-width: 376px) {
-  .last-check div {
-    padding-left: 33px;
-
-  }
-}
-
 //////////////////////////////////////////////////////////////////////////////////HEADER-B BURGER
 
 .form-input {
@@ -584,10 +444,6 @@ hr {
   top: 35%;
 }
 
-
-
-
-//
 /////////////////////////////////////////////////////////////////HELICOPTERS
 
 .container-wrapper {
@@ -715,18 +571,202 @@ hr {
   max-width: 740px;
 }
 
+.lalo {
+  width: 150px;
+}
+
 .container-wrapper, .main-container {
   overflow-x: hidden !important;
 }
 
+.offcanvas-title {
+  font-size: 30px !important;
+}
+
+.menu-all {
+  margin-bottom: 36px;
+}
+
+.menu-all .koko {
+  font-size: 25px;
+}
+
+.tet {
+  max-width: 207px;
+}
+
+.tet p {
+  margin-bottom: 0px;
+}
+
+.stick {
+  height: 30px;
+  width: 1px;
+  background-color: black;
+}
+
+.footer-end {
+  background-color: #353535;
+  padding: 10px 0;
+}
+
+.footer-end-block p, .p-text {
+  margin: 0 !important;
+  color: #656464;
+  font-size: 14px;
+}
+
+.hr-footer {
+  margin: 0 !important;
+  color: white !important;
+}
+
+.who-mad-img {
+  width: 112px;
+}
+
+.pay-block {
+  padding: 5px 15px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.pay-block img {
+  margin-right: 20px;
+}
+
+.world-pay {
+  margin-right: 0 !important;
+}
+
+
+
+
 //---------- MEDIA QUETIONS ------------
 
-@media (max-width: 1440px) {
-
+@media (max-width: 1668px) {
+  .helicopter_wrapper {
+    left: 18.5% !important;
+  }
 }
+
+@media (max-width: 1560px) {
+  .helicopter_wrapper {
+    left: 13.5% !important;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .helicopter_wrapper {
+    left: 11.5% !important;
+  }
+}
+
+
+@media (max-width: 1399px) {
+  .header {
+    .helicopter_wrapper {
+      left: 15.5%;
+    }
+  }
+}
+
+@media (max-width: 1288px) {
+  .helicopter_wrapper {
+    left: 11.5% !important;
+  }
+}
+
+
+
+@media (max-width: 1201px) {
+  .header {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .header-b {
+    display: none;
+  }
+
+  .header-b li {
+    float: left;
+  }
+  .header-b li a {
+    padding: 20px 30px;
+  }
+  .header-b .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header-b .menu-icon {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .header {
+    .helicopter_wrapper {
+      display: none;
+    }
+  }
+}
+
+
 @media (max-width: 1024px) {
+  .email-footer {
+    display: none !important;
+  }
+
+  .helicopter_wrapper {
+    left: 12%;
+  }
+
   .title-choose-heli h1 {
     font-size: 54px;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .partners-line {
+    display: none !important;
+  }
+
+  .one-inputs, .two-inputs, .three-inputs {
+    flex-direction: column;
+  }
+
+  .form-input {
+    margin-left: 0 !important;
+  }
+
+
+
+  .check-box {
+    flex-direction: column;
+  }
+
+  .box-1 {
+    margin-bottom: 20px;
+  }
+
+  .email-footer {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 991px) {
+
+}
+
+@media (max-width: 960px) {
+  .footer-end {
+    display: none;
   }
 }
 
@@ -735,6 +775,59 @@ hr {
     font-size: 40px;
     padding-left: 10px;
   }
+
+  .email-footer {
+    display: none !important;
+  }
+
+  .send-form-btn {
+    padding: 17px 50px;
+  }
+}
+
+@media (max-width: 598px) {
+  .c-b {
+    flex-direction: column;
+  }
+
+  .card-check {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 487px) {
+  .send-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .last-check {
+    margin-bottom: 20px;
+  }
+
+  .card-check {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 451px) {
+  #last-check {
+    width: 26px;
+    height: 26px;
+  }
+
+  .last-check div {
+    padding-left: 19px;
+  }
+
+  .telephone {
+    right: 68px;
+  }
+
+  .telephone a {
+    font-size: 16px;
+  }
+
 }
 
 
@@ -744,9 +837,21 @@ hr {
   }
 }
 
-@media (max-width: 375px) {
-
+@media (max-width: 376px) {
+  .last-check div {
+    padding-left: 33px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
